@@ -1,0 +1,103 @@
+.footer-basic-centered{
+	background-color: rgb(59,59,59);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+
+	padding: 45px;
+	margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+	color:  #8d9093;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+	color:  #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer-logo {
+	width: 40%;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered{
+		padding: 35px;
+	}
+
+	.footer-basic-centered .footer-links{
+		padding: 25px 0 20px;
+	}
+
+	.footer-basic-centered .footer-links a{
+		line-height: 1.8;
+	}
+}
+
+.footer-icon {
+	padding-left: 8px;
+	padding-right: 8px;
+	color: white;
+}
+
+.footer-links a {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.team-page-footer {
+	background-color: rgb(57,83,99);
+}
+
+/*wordpress foot classes*/
+
+ul#menu-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: inherit;
+	}
+	
+li.menu-item.menu-item-type-post_type.menu-item-object-page {
+	
+	display: inline-block;
+}
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.menu-item.menu-item-type-post_type.menu-item-object-page a:hover {
+    background-color: #111;
+}
+    display: inline-block;
+}
+
