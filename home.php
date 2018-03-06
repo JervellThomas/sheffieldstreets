@@ -2,7 +2,7 @@
 
 <div id="ajaxNews" class="square-layout square-skin--news square-skin--large grid grid--full">
 
-<?php 
+<?php
 $placesArgs = array (
 'type' => 'post',
 'posts_per_page' => 8,
@@ -10,13 +10,13 @@ $placesArgs = array (
 );
 
 $categoryPlaces = new WP_Query($placesArgs);
-	
+
 if($categoryPlaces -> have_posts()):
 
 		while ( $categoryPlaces ->have_posts()):$categoryPlaces -> the_post(); ?>
 
 			<div class="grid__item desk-one-quarter lap-and-up-one-quarter palm-one-half">
-                
+
 				<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
 
 
@@ -37,25 +37,25 @@ if($categoryPlaces -> have_posts()):
                             </div>
                         </div>
 				</div>
-		
+
 		<?php	endwhile;
-	
-	endif; 
+
+	endif;
 	wp_reset_postdata();
-	
+
 	?>
-	
-</div>	
+
+</div>
 
 <!-- News -->
-	<div class="news-header">	
-		<h2>People <img src="<?php echo get_template_directory_uri().'/assets/images/streetsicon.jpg'?>" /></h2> 
+	<div class="news-header">
+		<h2>People <img src="<?php echo get_template_directory_uri().'/assets/images/streetsicon.jpg'?>" /></h2>
 	</div>
-	
+
 								<!--Adds maroon line-->
 							<div class="stories-section">
 							</div>
-<?php 
+<?php
 //args to filter loop
 $peopleArgs = array (
 'type' => 'post',
@@ -71,7 +71,7 @@ if( $categorypeople -> have_posts()):
 
 			<div class="stories-box">
 				<div class="inside-stories-box">
-					
+
 					<a href="<?php the_permalink(); ?>" class="stories-link-image">
 
 						<?php $url1 = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
@@ -83,7 +83,7 @@ if( $categorypeople -> have_posts()):
 					</a>
 
 					<div class="story-text">
-						<h2> 
+						<h2>
 							<a href="<?php the_permalink(); ?>"> <span style="font-weight: bold; color: rgb(106,20,0)"><?php the_title(); ?></span></a>
 
 						</h2>
@@ -98,17 +98,16 @@ if( $categorypeople -> have_posts()):
 				</div>
 
 			</div>
-			
+
 							<!--Adds maroon line-->
 							<div class="stories-section">
 							</div>
 
 	<?php	endwhile;
-		
-endif; 
 
-wp_reset_postdata();		
+endif;
+
+wp_reset_postdata();
 ?>
-
 
 <?php get_footer(); ?>
