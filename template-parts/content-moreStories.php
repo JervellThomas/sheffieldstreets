@@ -6,7 +6,7 @@
 
 ?>
 
-	
+
 <div class="stories-header">
     <h2>More Stories <img src="<?php echo get_template_directory_uri().'/assets/images/streetsicon.jpg'?>" /></h2>
 </div>
@@ -16,8 +16,14 @@
 </div>
 
 
-<?php 
-$last3Blogs = new WP_Query('type=post&posts_per_page=3');
+<?php
+$randomBlogsArg = array (
+'orderby'        => 'rand', //selects random posts
+'type' => 'post',
+'posts_per_page' => 3,
+);
+
+$last3Blogs = new WP_Query($randomBlogsArg);
 
 if( $last3Blogs->have_posts()):
 
@@ -25,7 +31,7 @@ if( $last3Blogs->have_posts()):
 
 			<div class="stories-box">
 				<div class="inside-stories-box">
-					
+
 					<a href="<?php the_permalink(); ?>" class="stories-link-image">
 
 						<?php $url1 = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );?>
@@ -37,7 +43,7 @@ if( $last3Blogs->have_posts()):
 					</a>
 
 					<div class="story-text">
-						<h2> 
+						<h2>
 							<a href="<?php the_permalink(); ?>"> <span style="font-weight: bold; color: rgb(106,20,0)"><?php the_title(); ?></span></a>
 
 						</h2>
@@ -52,14 +58,14 @@ if( $last3Blogs->have_posts()):
 				</div>
 
 			</div>
-			
+
 							<!--Adds maroon line-->
 							<div class="stories-section">
 							</div>
 
 	<?php	endwhile;
-		
-endif; 
 
-wp_reset_postdata();		
+endif;
+
+wp_reset_postdata();
 ?>
