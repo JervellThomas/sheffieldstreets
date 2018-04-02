@@ -81,9 +81,9 @@ ul#menu-footer {
     overflow: hidden;
     background-color: inherit;
 	}
-	
+
 li.menu-item.menu-item-type-post_type.menu-item-object-page {
-	
+
 	display: inline-block;
 }
 
@@ -95,9 +95,8 @@ li.menu-item.menu-item-type-post_type.menu-item-object-page a{
     text-decoration: none;
 }
 
-li.menu-item.menu-item-type-post_type.menu-item-object-page a:hover {
+/*li.menu-item.menu-item-type-post_type.menu-item-object-page a:hover {
     background-color: #111;
-}
+}*/
     display: inline-block;
 }
-

@@ -22,9 +22,9 @@
 		<title>Sheffield Streets</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		
-		
-        <script src="https://use.fontawesome.com/318b083929.js"></script>
+
+
+        
 
         <script type="text/javascript">
 
@@ -38,7 +38,7 @@
 }
 
         </script>
-		
+
 </head>
 <body <?php body_class(); ?>>
 <header>
@@ -46,22 +46,22 @@
 <nav class="topnav-not-index" id="myTopnav">
 
 	<?php the_custom_logo ();?>
-  
+
   <!--<a class="nav-image-left" href="#">
   <img src="<?php echo get_template_directory_uri().'/assets/images/vectorlogoblack.png'?>" />
   </a>  -->
 
 
-  <div class="search-container"> 
+  <div class="search-container">
 	<?php get_search_form ();?>
   </div>
   <a href="stories.html">Stories</a>
- 
-  
+
+
 </nav>
 
 <!-- News -->
-	<div class="news-header">	
-		<h2>Stories <img src="<?php echo get_template_directory_uri().'/assets/images/streetsicon.jpg'?>" /></h2> 
+	<div class="news-header">
+		<h2>Stories <img src="<?php echo get_template_directory_uri().'/assets/images/streetsicon.jpg'?>" /></h2>
 	</div>
 </header>
