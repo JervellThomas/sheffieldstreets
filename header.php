@@ -24,7 +24,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 
-        
+
 
         <script type="text/javascript">
 
@@ -50,12 +50,23 @@
   <!--<a class="nav-image-left" href="#">
   <img src="<?php echo get_template_directory_uri().'/assets/images/vectorlogoblack.png'?>" />
   </a>  -->
-
-
-  <div class="search-container">
+	<div class="search-container">
 	<?php get_search_form ();?>
-  </div>
-  <a href="stories.html">Stories</a>
+	</div>
+
+	<?php
+	wp_nav_menu(array(
+	'theme_location'=>'primary',
+	'container'=> 'div',
+	'container_class' => 'custom-menu-class',
+	'menu_class'      => 'header',
+
+	));
+
+	?>
+
+
+	<!--<a href="stories.html">Stories</a>-->
 
 
 </nav>

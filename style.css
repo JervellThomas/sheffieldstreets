@@ -3980,8 +3980,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: white;
+
+
 }
 
 li a {
@@ -4087,24 +4087,6 @@ li a {
 	float: left;
 }
 
-input[type=text] {
-    width: 130px;
-    max-height: 2em;
-    box-sizing: border-box;
-    border: 2px solid rgb(59,59,59);
-    border-radius: 30px;
-    font-size: 16px;
-    background-color: rgb(59,59,59);
-    background-repeat: no-repeat;
-    background-size: 1.25em;
-    background-position: 1em;
-    padding-left: 3em;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-
-
 
 /* not index topnav *\
 
@@ -4182,7 +4164,7 @@ input[type=text] {
 	float: left;
 }
 
-input[type=text] {
+/*.form-control input[type=text] {
     width: 130px;
     max-height: 2em;
     box-sizing: border-box;
@@ -4196,7 +4178,7 @@ input[type=text] {
     padding-left: 3em;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-}
+}*/
 
 
 /* Search bar shitzz */
@@ -4212,6 +4194,20 @@ input[type=text] {
   margin: 8px;
   font-size: 17px;
   border: none;
+
+	width: 130px;
+	max-height: 2em;
+	box-sizing: border-box;
+	border: 2px solid rgb(206,206,206);
+	border-radius: 30px;
+	font-size: 16px;
+	background-color: rgb(206,206,206);
+	background-repeat: no-repeat;
+	background-size: 1.25em;
+	background-position: 1em;
+	padding-left: 1em;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
 }
 
 .topnav-not-index .search-container button {
@@ -4244,4 +4240,7 @@ input[type=text] {
   .topnav-not-index input[type=text] {
     border: 1px solid #ccc;
   }
+}
+ul#menu-header {
+	float:right;
 }
